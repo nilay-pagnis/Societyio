@@ -1,0 +1,24 @@
+[
+    {
+        "fname":"Dom",
+        "lname":"toratto",
+        "username":"dtoratto",
+        "password":"dtoratto@123",
+        "email":"dtoratto@gmail.com",
+        "phone":1234567890,
+        "societyName":"rioPark",
+        "featured":"false",
+        "isSocietyCreated":"false"
+    },
+    {
+      "fname": "tom",
+      "lname": "toratto",
+      "username": "dtoratto",
+      "password": "ttoratto@123",
+      "email": "tom@gmail.com",
+      "phone": 1234567980,
+      "societyName": "rioPark",
+      "featured": "false",
+      "isSocietyCreated": "false"
+    }
+]

@@ -1,14 +1,14 @@
 [
     {
-        "fname":"Dom",
-        "lname":"toratto",
-        "username":"dtoratto",
-        "password":"dtoratto@123",
-        "email":"dtoratto@gmail.com",
-        "phone":1234567890,
-        "societyName":"rioPark",
-        "featured":"false",
-        "isSocietyCreated":"false"
+      "fname": "Dom",
+      "lname": "toratto",
+      "username": "dtoratto",
+      "email": "dtoratto@gmail.com",
+      "phone": 1234567890,
+      "societyName": "rioPark",
+      "isSocietyCreated": "false",
+      "featured": "false",
+      "password": "dtoratto@123"
     },
     {
       "fname": "tom",
@@ -20,5 +20,14 @@
       "societyName": "rioPark",
       "featured": "false",
       "isSocietyCreated": "false"
+    },
+    {
+      "societyname": "mavic",
+      "address": "main street b block",
+      "societyMember": false,
+      "eventAreaCount": 2,
+      "guestRoomCount": 5,
+      "isGymAvailable": false,
+      "admin": "tom"
     }
 ]

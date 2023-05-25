@@ -1,3 +1,4 @@
+import "../CSS/Signup.css";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 

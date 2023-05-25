@@ -1,3 +1,4 @@
+import "../CSS/BookEvents.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -9,13 +10,13 @@ function BookEvents() {
   const backtohomepage = () => {
     navigate("/");
   };
-  
+
   const [event, setEvent] = useState({
     fname: "",
     lname: "",
     eventFrom: date,
     eventTo: date1,
-    eventname: ""
+    eventname: "",
   });
 
   let name, value;
@@ -29,7 +30,6 @@ function BookEvents() {
       [name]: value,
     });
   };
-
 
   const postData = async (e) => {
     e.preventDefault();
@@ -148,11 +148,13 @@ function BookEvents() {
                   value='Book Event'
                   onClick={postData}
                 />
-                
               </form>
             </div>
             <div className='img-event'>
-              <img src='https://cdni.iconscout.com/illustration/premium/thumb/events-4352689-3611150.png' alt="bookevent"></img>
+              <img
+                src='https://cdni.iconscout.com/illustration/premium/thumb/events-4352689-3611150.png'
+                alt='bookevent'
+              ></img>
             </div>
           </div>
         </div>

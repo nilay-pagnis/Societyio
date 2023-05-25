@@ -1,5 +1,7 @@
 const Society = require("../models/societyModel");
 const societyMember = require("../models/membersModel");
+const events = require("../models/eventsArenaModel");
+
 
 const setSociety = (req, res) => {
   if (!req.body) {
@@ -51,7 +53,41 @@ const setMembers = (req, res) => {
     console.log(req.body.username);
 };
 
+
+const bookEventArena = async (req, res) => {
+  const {fname, lname, eventFrom, eventTo, eventname} = req.body;
+
+  if(!req.body){
+    return res.status(400).json({ message: "content ca n not be empty" });
+  }
+  try {
+    console.log(eventFrom)
+    console.log(eventTo)
+    const bookevent = await events.findOne({ eventFrom:eventFrom});
+    if(bookevent) {
+      return res.status(422).json({error:"Event already Exist"});
+    } else {
+      const event = new events({
+        fname, lname, eventFrom, eventTo, eventname,
+      });
+
+      const doc = await event.save();
+      if(doc) {
+        console.log(doc);
+        res.status(201).json({ message: "Event created successfully" });
+      } else {
+         res.status(505).json({ message: "Failed to create new Event" });
+      }
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+
+
 module.exports = {
   setSociety,
   setMembers,
+  bookEventArena,
 };

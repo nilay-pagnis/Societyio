@@ -2,7 +2,7 @@
   margin: 0px;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: rgb(255, 237, 237);
+  background-color: rgb(255, 244, 244);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,6 +19,10 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+.logo a {
+  text-decoration: none;
+  color: #000000;
 }
 .navContainer {
   width: 100%;
@@ -76,7 +80,7 @@
 .section-container {
   margin-top: 40px;
   text-align: center;
-  background-color: rgb(255, 237, 237);
+  background-color: rgb(255, 245, 245);
 }
 .section-heading {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -139,4 +143,98 @@ img {
 .cocyright {
   text-align: center;
   font-weight: bold;
+}
+
+/* 404 page CSS */
+#notfound {
+  position: relative;
+  height: 90vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 272px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.notfound {
+   max-width: 920px;
+   width: 100%;
+   line-height: 1.4;
+   text-align: center;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  height: 100px;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: -1;
+}
+.notfound .notfound-404 h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(252, 230, 171);
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 46px;
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.notfound p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.notfound a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffa600;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: rgb(10, 10, 10);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: white;
+  border-color: rgb(245, 230, 202);
+  color: #fda501;
+}
+
+@media only screen and (max-width:480px) {
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+  }
+  .notfound h2 {
+    font-size: 26px;
+  }
 }

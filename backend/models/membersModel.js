@@ -5,7 +5,7 @@ const membersSchema = new mongoose.Schema(
   {
     societyName: {
       type: String,
-      required: [true, "please add address"],
+      required: [true, "please add society name"],
     },
     trk: { type: Array, "default": {} },
   },

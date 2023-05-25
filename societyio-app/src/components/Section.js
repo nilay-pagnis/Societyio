@@ -1,21 +1,23 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { NavLink } from "react-router-dom";
+
 
 function Section() {
   return (
     <section>
       <div className='section-container'>
-        <h1 className='section-heading'>We make things easy for society</h1>
+        <h1 className='section-heading'>We Manage Society For You</h1>
         <div className='design1'></div>
         <br />
         <br />
         <div className='feature-info'>
           <br />
-          <h1>Features</h1>
+          <h1>Housing Society Management Software</h1>
           <ul>
             <li>No more unnecessary messages on community chats.</li>
-            <li>Send society issues on single click.</li>
-            <li>Book events with simple clicks.</li>
+            <li>Send society Complaint's on single click.</li>
+            <li>Book event arena's with simple click.</li>
             <li>Easy to use.</li>
           </ul>
         </div>
@@ -42,7 +44,17 @@ function Section() {
                   Note: User can create single society and become member of
                   single society.
                 </Card.Text>
-                <Button variant='primary'>Create Society</Button>
+                <Button variant='primary'>
+                  <NavLink
+                    style={{ textDecoration: "none", color: "black" }}
+                    to='/create-society'
+                  >
+                    Create Society
+                  </NavLink>
+                </Button>
+                <p style={{ marginBottom: "0px", color: "gray" }}>
+                  coming soon...
+                </p>
               </Card.Body>
             </Card>
           </div>
@@ -57,7 +69,14 @@ function Section() {
                 <Card.Text>
                   Note: User can create single issue / month.
                 </Card.Text>
-                <Button variant='primary'>Report issue</Button>
+                <Button variant='primary'>
+                  <NavLink
+                    style={{ textDecoration: "none", color: "black" }}
+                    to='/report-issues'
+                  >
+                    Report Issues
+                  </NavLink>
+                </Button>
               </Card.Body>
             </Card>
           </div>
@@ -68,11 +87,18 @@ function Section() {
                 src='https://img.freepik.com/free-vector/hand-drawn-people-talking-table_23-2149075400.jpg?w=360'
               />
               <Card.Body>
-                <Card.Title>Book events</Card.Title>
+                <Card.Title>Book event Arena</Card.Title>
                 <Card.Text>
                   Note: User can book as per the availability.
                 </Card.Text>
-                <Button variant='primary'>Book events</Button>
+                <Button variant='primary'>
+                  <NavLink
+                    style={{ textDecoration: "none", color: "black" }}
+                    to='book-arena'
+                  >
+                    Book Events
+                  </NavLink>
+                </Button>
               </Card.Body>
             </Card>
           </div>

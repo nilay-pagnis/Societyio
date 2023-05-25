@@ -18,7 +18,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div features-societyio>
+        <div className='features-societyio'>
           <h5>Features</h5>
           <div className='features-lists'>
             <ul className='uabout'>
@@ -37,7 +37,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div features-societyio>
+        <div className='contact-societyio'>
           <h5>Reach out to us</h5>
           <div className='reachout-lists'>
             <ul className='uabout'>
@@ -47,11 +47,12 @@ function Footer() {
             </ul>
           </div>
         </div>
-      </div><br/>
+      </div>
+      <br />
       <div className='cocyright'>
         Copyright © 2023 society.io. All Rights Reserved.
-      </div><br/>
-
+      </div>
+      <br />
     </footer>
   );
 }

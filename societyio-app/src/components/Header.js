@@ -1,6 +1,5 @@
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
-import Signup from "../CSS/Signup.css";
 
 function Header() {
   return (

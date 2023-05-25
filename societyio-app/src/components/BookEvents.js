@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import bookEvents from "../CSS/BookEvents.css";
 import { useNavigate } from "react-router-dom";
 
 function BookEvents() {
@@ -153,7 +152,7 @@ function BookEvents() {
               </form>
             </div>
             <div className='img-event'>
-              <img src='https://cdni.iconscout.com/illustration/premium/thumb/events-4352689-3611150.png'></img>
+              <img src='https://cdni.iconscout.com/illustration/premium/thumb/events-4352689-3611150.png' alt="bookevent"></img>
             </div>
           </div>
         </div>

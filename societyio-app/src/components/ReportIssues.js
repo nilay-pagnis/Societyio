@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import reportIssue from "../CSS/reportIssue.css";
 import { useNavigate } from "react-router-dom";
 
 function ReportIssues() {
@@ -130,7 +129,7 @@ function ReportIssues() {
               </form>
             </div>
             <div className='img-event'>
-              <img src='https://static.vecteezy.com/system/resources/previews/022/428/233/non_2x/complaint-fill-outline-icons-simple-stock-illustration-stock-vector.jpg'></img>
+              <img src='https://static.vecteezy.com/system/resources/previews/022/428/233/non_2x/complaint-fill-outline-icons-simple-stock-illustration-stock-vector.jpg' alt="reportissueimg"></img>
             </div>
           </div>
         </div>

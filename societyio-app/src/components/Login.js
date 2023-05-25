@@ -77,7 +77,7 @@ function Login() {
           </form>
         </div>
         <div className='imglogin-area'>
-          <img src='https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg?w=2000'></img>
+          <img src='https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg?w=2000' alt='loginimg'></img>
         </div>
       </div>
     </div>

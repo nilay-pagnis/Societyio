@@ -209,7 +209,7 @@ function Signup() {
           </form>
         </div>
         <div className='img-area'>
-          <img src='https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7875.jpg?w=2000'></img>
+          <img src='https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7875.jpg?w=2000' alt="signup"></img>
         </div>
       </div>
     </div>

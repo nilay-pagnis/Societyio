@@ -7,13 +7,13 @@ function Footer() {
           <div className='about-lists'>
             <ul className='uabout'>
               <li>
-                <a href='#'>Home</a>
+                <a href='replace'>Home</a>
               </li>
               <li>
-                <a href='#'>About Us</a>
+                <a href='replace'>About Us</a>
               </li>
               <li>
-                <a href='#'>Terms and Conditions</a>
+                <a href='replace'>Terms and Conditions</a>
               </li>
             </ul>
           </div>
@@ -23,16 +23,16 @@ function Footer() {
           <div className='features-lists'>
             <ul className='uabout'>
               <li>
-                <a href='#'>Create Society</a>
+                <a href='replace'>Create Society</a>
               </li>
               <li>
-                <a href='#'>Book events Arena</a>
+                <a href='replace'>Book events Arena</a>
               </li>
               <li>
-                <a href='#'> Register Complaint</a>
+                <a href='replace'> Register Complaint</a>
               </li>
               <li>
-                <a href='#'>Manage maintanence |comming soon...</a>
+                <a href='replace'>Manage maintanence |comming soon...</a>
               </li>
             </ul>
           </div>
@@ -42,7 +42,7 @@ function Footer() {
           <div className='reachout-lists'>
             <ul className='uabout'>
               <li>
-                <a href='#'>Contact Us</a>
+                <a href='replace'>Contact Us</a>
               </li>
             </ul>
           </div>

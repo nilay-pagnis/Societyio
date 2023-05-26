@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
+    "server": "nodemon app.js",
+    "client": "npm start",
+    "dev": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

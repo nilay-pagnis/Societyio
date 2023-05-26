@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js",
-    "client": "npm start",
+    "backend": "nodemon app.js",
+    "societyio-app": "npm start",
     "dev": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

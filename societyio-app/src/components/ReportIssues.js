@@ -42,8 +42,6 @@ function ReportIssues() {
     });
 
     const data = await res.json();
-    console.log(complaint);
-    console.log(data);
     if (data.status === 422 || !data) {
       window.alert("Error! Error! Error!");
     } else {

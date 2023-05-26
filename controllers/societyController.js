@@ -50,7 +50,6 @@ const setMembers = (req, res) => {
         message: err.message || "some error occurred",
       });
     });
-    console.log(req.body.username);
 };
 
 
@@ -61,8 +60,6 @@ const bookEventArena = async (req, res) => {
     return res.status(400).json({ message: "content ca n not be empty" });
   }
   try {
-    console.log(eventFrom)
-    console.log(eventTo)
     const bookevent = await events.findOne({ eventFrom:eventFrom});
     if(bookevent) {
       return res.status(422).json({error:"Event already Exist"});
@@ -73,14 +70,14 @@ const bookEventArena = async (req, res) => {
 
       const doc = await event.save();
       if(doc) {
-        console.log(doc);
+       
         res.status(201).json({ message: "Event created successfully" });
       } else {
          res.status(505).json({ message: "Failed to create new Event" });
       }
     }
   } catch (err) {
-    console.log(err);
+    alert(err);
   }
 }
 

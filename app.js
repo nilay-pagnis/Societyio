@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const {errorHandler} = require("./middleware/errorMiddleware");
 const connectDB = require("./configDB/db");
 const PORT = process.env.PORT || 5000;
+const path = require('path')
 
 
 const app = express();
@@ -19,10 +20,15 @@ app.use(express.urlencoded({extended: false}))
 app.use('/home', require('./routes/users'));
 app.use('/user', require('./routes/society'));
 
-app.use(errorHandler)
+//static files
+app.use(express.static(path.join(__dirname, './societyio-app/build')))
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './societyio-app/build/index.html'))
+})
 
+app.use(errorHandler)
+//listen port
 app.listen(PORT, () => {
-  console.log(`started on ${PORT}`);
 });
 
 connectDB();

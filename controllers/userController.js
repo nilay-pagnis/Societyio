@@ -48,7 +48,7 @@ const setUser = async (req, res) => {
       // console.log(user)
       const doc = await user.save();
       if(doc) {
-        console.log(doc)
+        
         res.status(201).json({ message: "user account created successfully" });
       } else {
         res.status(505).json({ message: "failed to create account" });
@@ -56,7 +56,7 @@ const setUser = async (req, res) => {
       
     }
   } catch (err) {
-    console.log(err)
+    console.alret(err)
   }
 };
 
@@ -88,7 +88,7 @@ const checkloginCredentials = async (req, res) => {
       res.status(400).json({error:"Invalid Credentials"})
     }
   } catch (err) {
-      console.log(err);
+      console.alret(err);
   }
 }
 

@@ -20,7 +20,7 @@ const Logout = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
+        console.alert(err);
       });
   });
 

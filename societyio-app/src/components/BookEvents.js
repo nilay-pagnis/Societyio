@@ -33,7 +33,6 @@ function BookEvents() {
 
   const postData = async (e) => {
     e.preventDefault();
-    console.log();
     const { fname, lname, eventFrom, eventTo, eventname } = event;
 
     const res = await fetch("/user/book-arena", {
@@ -51,9 +50,6 @@ function BookEvents() {
     });
 
     const data = await res.json();
-    console.log(data);
-    console.log(eventFrom.toString());
-    console.log(eventTo.toString());
     if (data.status === 422 || !data) {
       window.alert("Please book another slot..");
     } else {

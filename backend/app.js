@@ -1,10 +1,10 @@
 const express = require("express");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const {errorHandler} = require("./middleware/errorMiddleware");
 const connectDB = require("./configDB/db");
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 
 const app = express();
@@ -21,8 +21,8 @@ app.use('/user', require('./routes/society'));
 
 app.use(errorHandler)
 
-app.listen(port, () => {
-  console.log(`started on ${port}`);
+app.listen(PORT, () => {
+  console.log(`started on ${PORT}`);
 });
 
 connectDB();
